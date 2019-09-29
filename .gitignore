@@ -1,1 +1,3 @@
 .venv
+junit.xml
+.coverage
