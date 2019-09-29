@@ -4,6 +4,8 @@ jobs:
   build:
     docker:
       - image: circleci/python:3.7
+        environment:
+          PIPENV_VENV_IN_PROJECT: true
 
     working_directory: ~/repo
 
@@ -12,7 +14,7 @@ jobs:
       - run:
           name: install  pipenv and activate
           command: |
-            pip install  pipenv
+            sudo pip install pipenv
             pipenv shell
       # Step 2: obtain repo from GitHub
       - checkout
