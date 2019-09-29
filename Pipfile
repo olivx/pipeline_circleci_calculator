@@ -7,8 +7,13 @@ verify_ssl = true
 pytest = "*"
 pytest-cov = "*"
 flake8 = "*"
+isort = "*"
+black = "*"
 
 [packages]
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
